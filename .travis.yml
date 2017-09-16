@@ -1,0 +1,13 @@
+sudo: required
+language: python
+services:
+  - docker
+install:
+  - pip install molecule
+  # - pip install required driver (e.g. docker, python-vagrant, shade)
+script:
+  - molecule test
+
+    #notifications:
+    #  webhooks:
+    #    url: 
