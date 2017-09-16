@@ -4,7 +4,7 @@ services:
   - docker
 install:
   - pip install molecule==1.25.0
-  # - pip install required driver (e.g. docker, python-vagrant, shade)
+  - pip install docker
 script:
   - molecule test
 
